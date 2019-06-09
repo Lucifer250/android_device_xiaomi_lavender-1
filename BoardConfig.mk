@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019 The Clean Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -50,7 +50,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 
-# androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_BASE := 0x00000000
@@ -199,7 +199,6 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 57453555712
-
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4

@@ -278,3 +278,6 @@ gsm.proximity.enable=true
 
 # UI
 sys.use_fifo_ui=1
+
+# COSP
+ro.cosp.maintainer=ClytheFreedLavender

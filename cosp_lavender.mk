@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019 The Clean Open Source Project 
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -13,9 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit COSP config
-
 $(call inherit-product, vendor/cosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+OTA_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cosp_lavender
@@ -33,6 +33,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="lavender" \
     TARGET_DEVICE="lavender"
 
-TARGET_USE_JELLY := true
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cosp.maintainer=ClytheFreedLavender
+    
