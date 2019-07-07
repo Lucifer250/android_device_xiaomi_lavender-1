@@ -12,9 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common COSP stuff.
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit COSP config
+
 $(call inherit-product, vendor/cosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cosp_lavender
@@ -31,3 +32,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.6.0.PFGMIXM release-keys" \
     PRODUCT_NAME="lavender" \
     TARGET_DEVICE="lavender"
+
+TARGET_USE_JELLY := true
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cosp.maintainer=ClytheFreedLavender
