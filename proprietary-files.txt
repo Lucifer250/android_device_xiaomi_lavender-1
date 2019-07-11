@@ -1589,9 +1589,6 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
-# Power-off charging daemon
--sbin/charger:sbin/chargeonlymode;rootfs
-
 # Postprocessing - from LA.UM.7.2.r1-06900-sdm660.0
 vendor/bin/hw/vendor.display.color@1.0-service|e6dbb06d0d82ffe3328e7ddd259db02f80c1669e
 vendor/bin/mm-pp-dpps|743cc7fe716d7f892727f9117a1846627b4f5c88
