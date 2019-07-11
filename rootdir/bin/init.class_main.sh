@@ -167,3 +167,4 @@ case "$fake_batt_capacity" in
     echo "$fake_batt_capacity" > /sys/class/power_supply/battery/capacity
     ;;
 esac
+
