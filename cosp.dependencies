@@ -7,9 +7,9 @@
    },
    {
       "remote":"github",
-      "repository":"18796299507/android_vendor_xiaomi_lavender-3",
+      "repository":"18796299507/android_vendor_xiaomi_lavender",
       "target_path":"vendor/xiaomi/lavender",
-      "branch":"lineage-16.0"
+      "branch":"pie"
    },
    {
       "remote":"github",
