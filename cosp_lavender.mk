@@ -13,12 +13,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit COSP config
-$(call inherit-product, vendor/candy/config/common_full_phone.mk)
+$(call inherit-product, vendor/cosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-CANDY_BUILD_TYPE := PRIVATE
+OTA_TYPE := PRIVATE
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := candy_lavender
+PRODUCT_NAME := cosp_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
