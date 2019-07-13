@@ -230,7 +230,7 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libsensorndkbridge
 
-# Healthd
+# Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service \
     chargeonlymode
