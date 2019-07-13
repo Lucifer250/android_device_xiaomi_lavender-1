@@ -15,7 +15,11 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 # Inherit COSP config
 $(call inherit-product, vendor/cosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-OTA_TYPE := PRIVATE
+
+# COSP Official
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cosp.maintainer=ClytheFreedLavender
+OTA_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cosp_lavender
