@@ -154,7 +154,11 @@ PRODUCT_PACKAGES += \
 # Device-specific settings
 PRODUCT_PACKAGES += \
     AdvancedSettings
-
+    
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+    
 # Doze
 PRODUCT_PACKAGES += \
    XiaomiParts
