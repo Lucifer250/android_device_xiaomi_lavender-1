@@ -143,7 +143,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     libxml2 \
-    Gcamera
+    Snap
 
 # CNE
 PRODUCT_PACKAGES += \
@@ -157,7 +157,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-   XiaomiDoze
+   XiaomiParts
 
 # Mi sound Enhancer
 PRODUCT_PACKAGES += \
