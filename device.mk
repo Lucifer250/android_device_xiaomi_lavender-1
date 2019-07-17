@@ -159,9 +159,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
     
-# Doze
+# Parts
 PRODUCT_PACKAGES += \
    XiaomiParts
+   
+# RetroMusicPlayer
+PRODUCT_PACKAGES += \
+   RetroMusicPlayer
 
 # Mi sound Enhancer
 PRODUCT_PACKAGES += \
