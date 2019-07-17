@@ -158,10 +158,6 @@ PRODUCT_PACKAGES += \
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
-    
-# Parts
-PRODUCT_PACKAGES += \
-   XiaomiParts
    
 # RetroMusicPlayer
 PRODUCT_PACKAGES += \
