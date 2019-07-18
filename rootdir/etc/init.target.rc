@@ -493,6 +493,7 @@ on charger
     mkdir /data/vendor/charge_logger 0771 system system
     start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
+    start thermal-engine
     start vendor.power_off_alarm
     start charge_logger
 
@@ -809,7 +810,7 @@ on property:sys.dynamic_debug=0
    write /sys/kernel/debug/dynamic_debug/control "file msm-analog-cdc.c -p"
    write /sys/kernel/debug/dynamic_debug/control "file msm-digital-cdc.c -p"
    write /sys/kernel/debug/dynamic_debug/control "file wcd-mbhc-v2.c -p"
-
+   
 #touch settings
 on property:vendor.tp.grip_area=90
     write /proc/tp_grip_area 90
