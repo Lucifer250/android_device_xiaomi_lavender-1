@@ -162,6 +162,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # RetroMusicPlayer
 PRODUCT_PACKAGES += \
    RetroMusicPlayer
+   
+# XiaomiDoze
+PRODUCT_PACKAGES += \
+   XiaomiDoze
 
 # Mi sound Enhancer
 PRODUCT_PACKAGES += \
