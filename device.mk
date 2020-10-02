@@ -150,26 +150,10 @@ PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne \
     services-ext
-
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    AdvancedSettings
     
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
-   
-# RetroMusicPlayer
-PRODUCT_PACKAGES += \
-   RetroMusicPlayer
-   
-# XiaomiDoze
-PRODUCT_PACKAGES += \
-   XiaomiDoze
-
-# Mi sound Enhancer
-PRODUCT_PACKAGES += \
-   DiracAudio
 
 # Display
 PRODUCT_PACKAGES += \
